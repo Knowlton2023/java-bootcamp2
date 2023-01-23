@@ -20,8 +20,9 @@ public class Week2Example {
 		//Integer convertedInput = Integer.parseInt(input);
 		
 		NumberService myNumber = new NumberService();
-		if (myNumber.getNumber() > 49 && myNumber.getNumber() < 301) {
-			System.out.println("The number you type in was: " + myNumber.getNumber());
+		Integer returnedNumber = myNumber.getNumber();
+		if (returnedNumber >= 50 && returnedNumber <= 300) {
+			System.out.println("The number you typed in was: " + returnedNumber);
 		} else {
 			System.out.println("The number you typed in was: null");
 		}
