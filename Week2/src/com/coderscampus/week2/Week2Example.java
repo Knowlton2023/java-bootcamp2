@@ -1,8 +1,10 @@
+
 package com.coderscampus.week2;
 
-//import java.util.Scanner;
+import java.util.Scanner;
 
 public class Week2Example {
+
 	public static void main (String[] args) {
 		// This is just for teaching purposes ///////
 		//  with respect to imports / packages     //
@@ -11,31 +13,49 @@ public class Week2Example {
 		String anotherString = "Another String";   //
 		/////////////////////////////////////////////
 		
-		//Scanner scanner = new Scanner(System.in);
-		//System.out.println("Type in any input:");
-		//String userInput = scanner.nextLine();
-		//System.out.println("You typed in: " + userInput);
-
-		//String input = scanner.nextLine();
-		//Integer convertedInput = Integer.parseInt(input);
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Type in your name: ");
+		String name = scanner.nextLine();
+		System.out.println("Type in your age: ");
+		String age = scanner.nextLine();
 		
-		NumberService myNumber = new NumberService();
-		Integer returnedNumber = myNumber.getNumber();
-		if (returnedNumber >= 50 && returnedNumber <= 300) {
-			System.out.println("The number you typed in was: " + returnedNumber);
+		if (name.equals("Trevor") 
+				|| age.equals("36")
+				|| name.equals("TJ")) {
+			System.out.println("Holy cow it's me!");
 		} else {
-			System.out.println("The number you typed in was: null");
+			System.out.println("Hello: " + name);
 		}
-
-//		if (convertedInput > 300) {
-//			System.out.println("The number you typed in was: null");			
-//		} else if (convertedInput < 50) {
-//			System.out.println("The number you typed in was: null");			
+		
+		scanner.close();
+		
+		
+//		int age = 21;
+//		
+//		if (age >= 19) {       
+//			System.out.println("You are an adult");
+//			if (age > 65) {
+//				System.out.println("You are a senior");
+//			}
+//		} else if (age >= 13) {
+//			System.out.println("You are a teenager");
+//		} else if (age == 12) {
+//			System.out.println("You are a pre-teen");
 //		} else {
-//			System.out.println("The number you typed in was: " + convertedInput);			
+//			System.out.println("You are a child");
 //		}
-//		scanner.close();
+//		
+//		String output = "Your age is " + age;
+//		
+//		System.out.println(output);
+//		
+//		if (output.equals("Your age is 18")) {
+//			System.out.println("Yay you can vote!");
+//		} else if (output.equals("Your age is 21")) {
+//			System.out.println("Yay you can drink / gamble!");
+//		}
 
+	
+	
 	}
-
 }
