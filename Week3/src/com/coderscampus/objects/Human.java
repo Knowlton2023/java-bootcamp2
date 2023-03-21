@@ -13,7 +13,7 @@ public class Human {
 	}
 			
 
-	void setProperties (String gender, String height, 
+		void setProperties (String gender, String height, 
 			String weight, String eyeColor) {
 		this.gender = gender;
 		this.height = height;
